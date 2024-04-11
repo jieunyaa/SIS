@@ -1,0 +1,12 @@
+﻿$(document).ready(function () {
+    var bg = ["i.imgur.com/9ckkRvD.jpg", "i.imgur.com/6FSp1eg.jpg", "i.imgur.com/ZMbwyUM.jpg", "i.imgur.com/75icZ75.jpg", "i.imgur.com/37XSDa7.jpg"];
+    var x = Math.floor(Math.random() * bg.length);
+
+    function fader() {
+        document.getElementById('bgslider').style.backgroundImage = "url('//" + bg[x] + "')";
+        x += 1;
+        if (x > bg.length - 1) x = 0;
+        setTimeout(fader, 300000);
+    }
+    fader();
+});

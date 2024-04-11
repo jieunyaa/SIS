@@ -1,0 +1,8 @@
+
+$(document).ready(function () {
+	 var ErrorModalID = $("#ErrorModal").length;
+	 	if (ErrorModalID != 0)
+	 	{
+	  	  $('#ErrorModal').modal('show');
+	 	}
+});
